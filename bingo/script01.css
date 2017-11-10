@@ -1,0 +1,31 @@
+body{
+  padding-bottom: 10%;
+  padding-left: 35%;
+  padding-top: 7%;
+  background-color: #38925E;
+  color: #263149;
+  font-size: 20px;
+  font-family: "Lucida Grande",Verdana,Arial,Helvetica,sans-serif;
+}
+h1,th{
+  font-family: Georgia,"Times New Roma",Times,serif;
+}
+h1{
+  font-size: 28px;
+}
+table{
+  border-collapse: collapse;
+}
+th,td{
+  padding: 10px;
+  border: 2px #263149 solid;
+  text-align: center;
+  width: 20%;
+
+}
+#free, .pickedBG{
+  background-color: #F72100;
+}
+.winningBG{
+  background-image: :url(images/redFlash.gif);
+}
