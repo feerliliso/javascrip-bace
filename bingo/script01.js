@@ -24,6 +24,8 @@ function initAll() {
   usedNums[newNum] = true;
 
   document.getElementById(currSquare).innerHTML = newNum;
+  document.getElementById(currSquare).className = "";
+  document.getElementById(currSquare).onmousedown = toggleColor;
    }
 function getNewNum() {
     return Math.floor(Math.random()*15);
@@ -35,4 +37,16 @@ function anotherCard() {
   newCard();
   return false;
 }
+function toggleColor(evt) {
+  if (evt) {
+    var thisSquare = evt.target;
+  } else {
+    var thisSquare = window.event.srcElenment;
   }
+  if (thisSquare.className == "") {
+    thisSquare.className = "pickedBG";
+  }
+  else {
+    thisSquare.className = "";
+  }
+}

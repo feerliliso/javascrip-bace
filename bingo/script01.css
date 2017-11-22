@@ -24,6 +24,7 @@ th,td{
 
 }
 #free, .pickedBG{
+  background-color: #f66;
 }
 .winningBG{
   background-image: :url(images/redFlash.gif);
