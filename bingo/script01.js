@@ -49,4 +49,17 @@ function toggleColor(evt) {
   else {
     thisSquare.className = "";
   }
+  chickWin();
+}
+function chekWin() {
+  var winningoption = -1;
+  var setSquares = 0
+  var winners = new Array(31,992,15360,507904,541729,557328,103458,2162820,4329736,8519745,8659472,16252928);
+      for(var i=0;i<24;i++){
+        var currSquare = "square"+i;
+        if (document.getElementById(currSquare).className !=""){
+          document.getElementById(currSquare).className = "pickedBG";
+          setSquares = setSquares|Math.pow(2,i);
+        }
+      }
 }
